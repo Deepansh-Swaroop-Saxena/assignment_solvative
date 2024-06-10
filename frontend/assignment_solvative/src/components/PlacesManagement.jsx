@@ -78,7 +78,7 @@ const PlacesManagement = () => {
               style={{ marginBottom: "20px" }}
               className="inputRounded search-input width-100"
               type="search"
-              placeholder="Search By Territory"
+              placeholder="Search By Place Name"
               maxLength="100"
               onChange={debouncedHandleSearch}
             />

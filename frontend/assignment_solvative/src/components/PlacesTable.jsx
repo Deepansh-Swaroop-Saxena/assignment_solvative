@@ -17,6 +17,7 @@ const PlacesTable = ({options}) => {
             <th>#S No.</th>
             <th>Place Name </th>
             <th>Country</th>
+            <th>Flag</th>
            
           </tr>
         </thead>
@@ -28,6 +29,11 @@ const PlacesTable = ({options}) => {
                 <td>{(i + 1)}</td>
                 <td>{row?.name}</td>
                 <td>{row?.country}</td>
+                <td>
+  <img src={`https://flagsapi.com/${row?.countryCode}/flat/64.png`} alt="Flag" />
+</td>
+
+                
                 
               </tr>
             ))}
