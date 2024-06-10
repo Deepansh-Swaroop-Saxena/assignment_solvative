@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import PlacesManagement from './components/PlacesManagement.jsx'
+import PlacesManagement from './components/PlacesManagement'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <PlacesManagement />
+    <PlacesManagement/>
   </React.StrictMode>,
 )
