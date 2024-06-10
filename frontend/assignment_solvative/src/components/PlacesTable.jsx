@@ -14,7 +14,7 @@ const PlacesTable = ({options}) => {
       >
         <thead>
           <tr className="cm_table_head">
-            <th>S.No.</th>
+            <th>#S No.</th>
             <th>Place Name </th>
             <th>Country</th>
            

@@ -50,7 +50,7 @@ const PlacesManagement = () => {
 
   useEffect(() => {
     getCitiesList();
-  }, [pageNo,itemsPerPage]);
+  }, [pageNo,itemsPerPage, search]);
 
   const debouncedHandleSearch = debounce((event) => {
     setSearchValue(event.target.value);
@@ -70,7 +70,7 @@ const PlacesManagement = () => {
               }}
             >
               <div className="left">
-                <h3>Places Listing</h3>
+                <h3>PLACES LISTING</h3>
               </div>
              
             </div>
@@ -78,12 +78,12 @@ const PlacesManagement = () => {
               style={{ marginBottom: "20px" }}
               className="inputRounded search-input width-100"
               type="search"
-              placeholder="Search By Title"
+              placeholder="Search By Territory"
               maxLength="100"
               onChange={debouncedHandleSearch}
             />
             <div id="loader"></div>
-            <div id="hardwarePartVariantTable">
+            <div id="placeList"      >
               {loader ? "Loading...." : <PlacesTable options={placesList} />}
             </div>
           </div>
